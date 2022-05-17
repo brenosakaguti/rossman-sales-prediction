@@ -24,3 +24,17 @@ The Random Forest model was by far the best performing, with almost half the ave
 *Figure: The relationship between the predicted and real sales value*
 
 As seen in the plot, the model is relatively unbiased in predicting sales, except for some outliers where the sales were considerably underestimated, which could be the subject of further inquiry. For now, they will be left as is.
+### Returning to Kaggle
+After training, the model was used on previously-unseen test data, which was used in the Kaggle competition. The scoring method for the competition was Root Mean Square Percentage Error (RMSPE), in which the model used for the project was scored 0.17399.
+
+![The Kaggle submission](images/kaggle_results.png)
+
+*The Kaggle submission*
+
+The score fell considerably short of the winning score for the competition, which was 0.10021, indicating a lot of improvement could be made.
+## Conclusion
+The project shows that a simple model with minimal tuning can have reasonably good results, although getting the best predictions would take a lot more to do. As an exploratory project, it presented a lot of avenues on new things to do and improvements to be made. Some other considerations for future projects include:
+- Looking at more successful models in the competition to see which methods could have been done better
+- Setting up a more organized code, with an unified pipeline for more streamlined fitting and testing
+- Experimenting with other machine learning algorithms to find the best fit for the task in question. (XGBoost in particular seemed popular in that competition)
+- Doing more fine-tuning to find the best hyperparameters for the model and data
