@@ -21,3 +21,4 @@ data/handler_testing.ipynb
 data/rf_model.pkl
 data/storetype_encoder.pkl
 data/.ipynb_checkpoints/handler_testing-checkpoint.ipynb
+.ipynb_checkpoints/filtered_data-checkpoint.csv
