@@ -2,7 +2,9 @@
 ## Introduction
 Rossmann is a drug store chain in Europe operating thousands of stores throughout the continent. This project is based on a [competition](https://www.kaggle.com/competitions/rossmann-store-sales/overview) hosted on Kaggle that involved predicting sales figures six weeks in advance based on past performance. The competition has since ended, but the data will be used in the project as practice.
 ## The Project
-The project is composed of two jupyter notebook files, `rossmann_sales_prediction.ipynb` which contains the initial exploratory analysis and visualization of the data, and `rossmann_models.ipynb`, where we prepared the data for the machine learning models, trained them and used it to predict sales. Finally, the predicted data was sent back to Kaggle to be scored.
+The project is composed of two jupyter notebook files, `rossmann_sales_prediction.ipynb` which contains the initial exploratory analysis and visualization of the data, and `rossmann_models.ipynb`, where we prepared the data for the machine learning models, trained them and used it to predict sales. Then, the predicted data was sent back to Kaggle to be scored.
+
+Finally, a [streamlit app](https://share.streamlit.io/brenosakaguti/rossmann-sales-prediction/main/web_app/streamlit_app.py) was made to assist in visualizing the sales prediction data.
 ### Data Exploration
 In the initial phase of the project, the data was analyzed to find the most relevant variables for the model, and to give a better understanding on how they affect the target metric, the sales figure. Hypotheses were formulated and tested, and graphs were plotted to visualize the relationships between the parameters.
 
@@ -32,6 +34,15 @@ After training, the model was used on previously-unseen test data, which was use
 *The Kaggle submission*
 
 The score fell considerably short of the winning score for the competition, which was 0.10021, indicating a lot of improvement could be made.
+
+### Streamlit
+
+After training the model and scoring it, we made a basic visualization app using Streamlit. It allows an user to select a store and see how much it would sell on a six weeks period.
+
+![The Streamlit app](images/web_chart.png)
+
+*The Streamlit app*
+
 ## Conclusion
 The project shows that a simple model with minimal tuning can have reasonably good results, although getting the best predictions would take a lot more to do. As an exploratory project, it presented a lot of avenues on new things to do and improvements to be made. Some other considerations for future projects include:
 - Looking at more successful models in the competition to see which methods could have been done better
