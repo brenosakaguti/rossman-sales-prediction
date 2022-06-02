@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-data = pd.read_csv("computed_data.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/brenosakaguti/rossmann-sales-prediction/main/web_app/computed_data.csv")
 data["Date"] = data["Date"].astype("datetime64")
 
 st.title("Rossmann Sales Prediction")
