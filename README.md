@@ -37,7 +37,7 @@ The score fell considerably short of the winning score for the competition, whic
 
 ### Streamlit
 
-After training the model and scoring it, we made a basic visualization app using Streamlit. It allows an user to select a store and see how much it would sell on a six weeks period.
+After training the model and scoring it, we made a basic visualization app using Streamlit [(link)](https://share.streamlit.io/brenosakaguti/rossmann-sales-prediction/main/web_app/streamlit_app.py). It allows an user to select a store and see how much it would sell on a six weeks period.
 
 ![The Streamlit app](images/web_chart.png)
 
