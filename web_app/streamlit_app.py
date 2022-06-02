@@ -1,9 +1,5 @@
-from tkinter import Y
-from sklearn.covariance import empirical_covariance
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import altair as alt
 
 data = pd.read_csv("computed_data.csv")
